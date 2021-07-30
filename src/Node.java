@@ -9,7 +9,7 @@ public class Node {
     public Node right;
 
     /**
-     * Creates a new node with Object <code>d</code>
+     * Creates a new node with Object <code>o</code>
      *
      * @param o object that is to be stored in the Node
      */
