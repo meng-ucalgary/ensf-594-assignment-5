@@ -50,7 +50,7 @@ public class NodeQueue {
     }
 
     /**
-     * Checks if the queue if empty
+     * Checks if the queue is empty
      *
      * @return <code>true</code> if the queue is empty, <code>false</code> otherwise
      */
