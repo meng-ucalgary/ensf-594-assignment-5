@@ -44,6 +44,8 @@ public class App {
     private void main() {
         StudentTree st = new StudentTree();
 
+        System.out.printf("%nProcessing...%n");
+
         try (BufferedReader br = new BufferedReader(this.inputFile)) {
             String str;
 
@@ -71,6 +73,10 @@ public class App {
 
         catch (IOException e) {
             e.printStackTrace();
+        }
+
+        finally {
+            System.out.printf("%nDone!%n");
         }
     }
 
