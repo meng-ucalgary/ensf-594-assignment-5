@@ -49,12 +49,17 @@ public class App {
 
             // read all the records till EOF is reached
             while ((str = br.readLine()) != null) {
-                if(str.length() == 0) {
+                // skip the empty or blank lines
+                if (str.length() == 0 || str.isBlank()) {
                     continue;
                 }
 
-                Student student = this.stringToStudent(str);
-                st.insert(student);
+                // insert only if operation code is 'I'
+                if (str.charAt(0) == 'I') {
+                    Student student = this.stringToStudent(str);
+                    st.insert(student);
+                }
+
             }
 
             // System.out.println(st.inOrder());
