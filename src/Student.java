@@ -58,6 +58,9 @@ public class Student implements Comparable<Student> {
         return this.lastName.toLowerCase().compareTo(o.lastName.toLowerCase());
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
