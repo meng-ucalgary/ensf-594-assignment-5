@@ -79,7 +79,7 @@ public class StudentTree {
         }
 
         this.inOrder(root.left);
-        this.tempString.append((Student) root.data); // equivalent to System.out.println((Student) root.data);
+        this.tempString.append(((Student) root.data).toString()); // equivalent to System.out.println((Student) root.data);
         this.inOrder(root.right);
     }
 
@@ -103,7 +103,7 @@ public class StudentTree {
 
         while (!this.tempQueue.isEmpty()) {
             Node temp = this.tempQueue.dequeue();
-            this.tempString.append(temp.data);
+            this.tempString.append(temp.data.toString());
 
             if (temp.left != null) {
                 this.tempQueue.enqueue((Node) temp.left);
