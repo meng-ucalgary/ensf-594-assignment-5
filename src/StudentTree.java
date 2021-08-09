@@ -99,18 +99,20 @@ public class StudentTree {
         // reset the tempQueue
         this.tempQueue = new NodeQueue();
 
-        this.tempQueue.enqueue((Node) this.root);
+        if(this.root != null) {
+            this.tempQueue.enqueue((Node) this.root);
+        }
 
         while (!this.tempQueue.isEmpty()) {
-            Node temp = this.tempQueue.dequeue();
-            this.tempString.append(temp.data.toString());
+            Node curr = this.tempQueue.dequeue();
+            this.tempString.append(curr.data.toString());
 
-            if (temp.left != null) {
-                this.tempQueue.enqueue((Node) temp.left);
+            if (curr.left != null) {
+                this.tempQueue.enqueue((Node) curr.left);
             }
 
-            if (temp.right != null) {
-                this.tempQueue.enqueue((Node) temp.right);
+            if (curr.right != null) {
+                this.tempQueue.enqueue((Node) curr.right);
             }
         }
 
