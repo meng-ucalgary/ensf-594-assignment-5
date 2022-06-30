@@ -1,56 +1,30 @@
-# Binary Search Tree
+# ENSF-594 Assignment 5
 
-This program is the solution to the problem statement given in the file [Questions.pdf](Questions.pdf).
+An assignment on Binary Search Tree depth-first and breadth-first traversals.
 
+## How to build and run
 
+1. Clone the repository to your local machine.
+
+2. Run the script [`launch.sh`](launch.sh) or [`launch.cmd`](launch.cmd) to launch the program.
 
 ## How it works
 
 1. User launches the program
 
-1. The program reads the [`input.txt`](input.txt) file
+2. The program reads the [`input.txt`](input.txt) file
 
-1. The program displays <b>Processing...</b> while it processes the input
+3. The program displays <b>Processing...</b> while it processes the input
 
-1. The program writes the processed output in the files [`output1.txt`](output1.txt) and [`output2.txt`](output2.txt)
+4. The program writes the processed output in the files [`output1.txt`](output1.txt) and [`output2.txt`](output2.txt)
 
-1. The program exits with the message <b>Done!</b>
-
-
-
-## Dependencies
-
-+ JDK 1.7 or above
-
-
-
-## How to run
-
-1. Clone the project on your local machine or extract the downloaded the zip archive
-
-1. If using *nix OS
-   1. Using the terminal, go to the directory where the project is cloned/extracted
-   1. Run the below commands
-      ```shell
-      chmod +x launch.sh
-      ./launch.sh
-      ```
-   1. Then follow the onscreen instructions, if any
-
-1. If using Windows OS
-   1. Navigate to the directory where the project is cloned/extracted
-   1. Double click on the file `launch.cmd`
-   1. Follow the onscreen instructions, if any
-
-
+5. The program exits with the message <b>Done!</b>
 
 ## Tree Diagram
 
-If the below diagram appears too much scaled down to view, please click [here](Images/diagram.svg)
+If the below diagram appears too much scaled down to view, then please click [here](https://raw.githubusercontent.com/meng-ucalgary/ensf-594-assignment-5/main/Images/diagram.svg).
 
 ![Tree](Images/diagram.svg)
-
-
 
 ## Execution Screenshots
 
